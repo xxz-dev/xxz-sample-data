@@ -139,7 +139,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java"
+                                    "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
                                 },
                                 "region": {
                                     "startLine": 44,
@@ -163,7 +163,7 @@
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java"
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
                                                     },
                                                     "region": {
                                                         "startLine": 1,
@@ -180,7 +180,7 @@
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java"
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
                                                     },
                                                     "region": {
                                                         "startLine": 3,
@@ -197,7 +197,7 @@
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java"
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
                                                     },
                                                     "region": {
                                                         "startLine": 5,
