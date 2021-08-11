@@ -206,6 +206,57 @@
                                                 }
                                             },
                                             "nestingLevel": 1
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "ddd"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 6,
+                                                        "endLine": 6
+                                                    }
+                                                }
+                                            },
+                                            "nestingLevel": 0
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "eee"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 7,
+                                                        "endLine": 7
+                                                    }
+                                                }
+                                            },
+                                            "nestingLevel": 1
+                                        },
+                                        {
+                                            "location": {
+                                                "message": {
+                                                    "text": "fff"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 8,
+                                                        "endLine": 8
+                                                    }
+                                                }
+                                            },
+                                            "nestingLevel": 2
                                         }
                                     ]
                                 }
