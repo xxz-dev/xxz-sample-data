@@ -51,6 +51,12 @@ jobs:
       with:
         name: sarif_results
         path: codeguru-results*.json
+
+    - name: 'Upload Sample Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: sample_sarif_results
+        path: sample.sarif.json
         
     - name: Upload review result
       if: ${{ success() }}
