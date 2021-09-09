@@ -41,12 +41,9 @@
                             },
                             "properties": {
                                 "tags": [
-                                    "cryptography",
-                                    "security",
-                                    "digital-signature",
-                                    "cwe-327"
+                                    "security"
                                 ],
-                                "security-severity": 9
+                                "security-severity": 9.0
                             }
                         }
                     ]
