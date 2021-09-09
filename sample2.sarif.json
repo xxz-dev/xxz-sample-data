@@ -23,8 +23,10 @@
                             "properties": {
                                 "tags": [
                                     "cryptography"
-                                ],
-                                "problem.severity": "warning"
+                                ]
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
                             }
                         },
                         {
@@ -45,6 +47,9 @@
                                 ],
                                 "security-severity": 9.0,
                                 "precision": "high"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
                             }
                         }
                     ]
