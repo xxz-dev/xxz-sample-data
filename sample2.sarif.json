@@ -1,6 +1,6 @@
 {
     "version": "2.1.0",
-    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.4",
     "runs": [
         {
             "tool": {
@@ -9,47 +9,123 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "my-rule-1",
-                            "name": "rule 1",
+                            "id": "AWS Best Practices",
+                            "name": "AWS Best Practices",
                             "shortDescription": {
-                                "text": "Insecure cryptography 1"
-                            },
-                            "fullDescription": {
-                                "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
+                                "text": "AWS Best Practices",
+                                "markdown": "AWS Best Practices"
                             },
                             "help": {
-                                "text": "Misuse of cryptography-related APIs can create security vulnerabilities. This includes one or more of the following: algorithms with known weaknesses, certain padding modes, lack of integrity checks, and insufficiently large key sizes."
-                            },
-                            "properties": {
-                                "tags": [
-                                    "cryptography"
-                                ]
-                            },
-                            "defaultConfiguration": {
-                                "level": "warning"
+                                "text": "AWS best practices are rules that help you improve your code quality by identifying areas where your code doesn\u2019t follow a best practice of an AWS API.",
+                                "markdown": "AWS best practices are rules that help you improve your code quality by identifying areas where your code doesn\u2019t follow a best practice of an AWS API."
                             }
                         },
                         {
-                            "id": "my-rule-2",
-                            "name": "rule 2",
+                            "id": "AWS CloudFormation Issues",
+                            "name": "AWS CloudFormation Issues",
                             "shortDescription": {
-                                "text": "Insecure cryptography 2"
-                            },
-                            "fullDescription": {
-                                "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
+                                "text": "AWS CloudFormation Issues",
+                                "markdown": "AWS CloudFormation Issues"
                             },
                             "help": {
-                                "text": "Misuse of cryptography-related APIs can create security vulnerabilities. This includes one or more of the following: algorithms with known weaknesses, certain padding modes, lack of integrity checks, and insufficiently large key sizes."
+                                "text": "CloudFormation rules help you improve the code quality of your CloudFormation templates.",
+                                "markdown": "CloudFormation rules help you improve the code quality of your CloudFormation templates."
+                            }
+                        },
+                        {
+                            "id": "Duplicate Code",
+                            "name": "Duplicate Code",
+                            "shortDescription": {
+                                "text": "Duplicate Code",
+                                "markdown": "Duplicate Code"
                             },
-                            "properties": {
-                                "tags": [
-                                    "security"
-                                ],
-                                "security-severity": 9.0,
-                                "precision": "high"
+                            "help": {
+                                "text": "Duplicate code is a rule type that helps you improve your code quality by detecting duplicated code that could be consolidated for better code maintainability.",
+                                "markdown": "Duplicate code is a rule type that helps you improve your code quality by detecting duplicated code that could be consolidated for better code maintainability."
+                            }
+                        },
+                        {
+                            "id": "Code Maintenance Issues",
+                            "name": "Code Maintenance Issues",
+                            "shortDescription": {
+                                "text": "Code Maintenance Issues",
+                                "markdown": "Code Maintenance Issues"
                             },
-                            "defaultConfiguration": {
-                                "level": "error"
+                            "help": {
+                                "text": "Code maintenance rules are meant to improve your code quality by detecting code complexities or any characteristic in your source code that makes the code difficult to maintain over time.",
+                                "markdown": "Code maintenance rules are meant to improve your code quality by detecting code complexities or any characteristic in your source code that makes the code difficult to maintain over time."
+                            }
+                        },
+                        {
+                            "id": "Concurrency Issues",
+                            "name": "Concurrency Issues",
+                            "shortDescription": {
+                                "text": "Concurrency Issues",
+                                "markdown": "Concurrency Issues"
+                            },
+                            "help": {
+                                "text": "Concurrency rules help you improve your code quality by detecting missing synchronization resulting in incorrect functionality or excessive synchronization leading to performance issues.",
+                                "markdown": "Concurrency rules help you improve your code quality by detecting missing synchronization resulting in incorrect functionality or excessive synchronization leading to performance issues."
+                            }
+                        },
+                        {
+                            "id": "Input Validations",
+                            "name": "Input Validations",
+                            "shortDescription": {
+                                "text": "Input Validations",
+                                "markdown": "Input Validations"
+                            },
+                            "help": {
+                                "text": "Input validations is a rule type that helps you improve the security of your code by identifying areas where malformed data might be entering your database and triggering malfunctions of downstream components.",
+                                "markdown": "Input validations is a rule type that helps you improve the security of your code by identifying areas where malformed data might be entering your database and triggering malfunctions of downstream components."
+                            }
+                        },
+                        {
+                            "id": "Python Best Practices",
+                            "name": "Python Best Practices",
+                            "shortDescription": {
+                                "text": "Python Best Practices",
+                                "markdown": "Python Best Practices"
+                            },
+                            "help": {
+                                "text": "Python best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice of the language or one of its libraries.",
+                                "markdown": "Python best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice of the language or one of its libraries."
+                            }
+                        },
+                        {
+                            "id": "Java Best Practices",
+                            "name": "Java Best Practices",
+                            "shortDescription": {
+                                "text": "Java Best Practices",
+                                "markdown": "Java Best Practices"
+                            },
+                            "help": {
+                                "text": "Java best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice set by the language or one of its libraries.",
+                                "markdown": "Java best practices are rules that help you improve your code quality by identifying areas where your code doesn't follow a best practice set by the language or one of its libraries."
+                            }
+                        },
+                        {
+                            "id": "Resource Leaks",
+                            "name": "Resource Leaks",
+                            "shortDescription": {
+                                "text": "Resource Leaks",
+                                "markdown": "Resource Leaks"
+                            },
+                            "help": {
+                                "text": "Resource leaks is a rule type that helps you improve the security of your code by identifying leaks in resource objects.",
+                                "markdown": "Resource leaks is a rule type that helps you improve the security of your code by identifying leaks in resource objects."
+                            }
+                        },
+                        {
+                            "id": "Security Issues",
+                            "name": "Security Issues",
+                            "shortDescription": {
+                                "text": "Security Issues",
+                                "markdown": "Security Issues"
+                            },
+                            "help": {
+                                "text": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security.",
+                                "markdown": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security."
                             }
                         }
                     ]
@@ -57,7 +133,8 @@
             },
             "results": [
                 {
-                    "ruleId": "my-rule-1",
+                    "ruleId": "AWS Best Practices",
+                    "level": "warning",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -72,45 +149,27 @@
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 26 \n\n    * src/main/java/com/mycompany/app/App.java, line: 26 (The constant value)\n\n"
+                        "text": "It looks like your XML parser is not strongly configured. An **eXternal Entity injection** (XXE) attack can occur when XML input references an external payload that is parsed by a weakly configured XML parser. [Learn more](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A4-XML_External_Entities_%28XXE%29). We recommend that you configure your XML parser more strongly by disabling DTDs (External Entities) or disabling parser specific properties. For information about how to do this in your XML parser, see [here](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html#jaxp-documentbuilderfactory-saxparserfactory-and-dom4j).<br><br>Relevant Locations:<br><br>* src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 43 <br><br>* src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 44 <br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 16 <br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 26 <br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 26 (The constant value)<br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 25 (The constant value)<br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 32 <br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 31 (The constant value)<br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 32 (The constant value)<br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 36 <br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 36 (The constant value)<br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 35 (The constant value)<br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 39 <br><br>        * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 39 (The constant value)<br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 43 <br><br>"
                     }
                 },
                 {
-                    "ruleId": "my-rule-2",
+                    "ruleId": "Security Issues",
+                    "level": "warning",
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
+                                    "uri": "src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java"
                                 },
                                 "region": {
-                                    "startLine": 1,
-                                    "endLine": 1
+                                    "startLine": 52,
+                                    "endLine": 52
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 20 \n\n    * src/main/java/com/mycompany/app/App.java, line: 20 (The constant value)\n\n"
-                    }
-                },
-                {
-                    "ruleId": "my-rule-2",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/com/amazon/samplelib/dragonglass/Dragon.java"
-                                },
-                                "region": {
-                                    "startLine": 5,
-                                    "endLine": 5
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "It looks like your code uses a cipher object with an insecure transformation. To make your\ncode more secure, use one of the following algorithms with a built-in integrity check:\nAES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).\n\n\nRelevant Locations:\n\n* src/main/java/com/mycompany/app/App.java, line: 25 \n\n    * src/main/java/com/mycompany/app/App.java, line: 18 (The constant value)\n\n"
+                        "text": "It looks like a hardcoded password is passed to [`PBEKeySpec`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/spec/PBEKeySpec.html). To make your code more secure, do not use hardcoded values.<br><br>Relevant Locations:<br><br>* src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 52 <br><br>    * src/main/java/com/amazon/samplelib/dragonglass/DragonGlass.java, line: 58 (The constant value)<br><br>"
                     }
                 }
             ]
