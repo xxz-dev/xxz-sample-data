@@ -43,7 +43,8 @@
                                 "tags": [
                                     "security"
                                 ],
-                                "security-severity": 9.0
+                                "security-severity": 9.0,
+                                "precision": "high"
                             }
                         }
                     ]
