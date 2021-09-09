@@ -1,6 +1,8 @@
 name: xxz java ci test 1
 
 on:
+  push:
+  pull_request:
   workflow_dispatch:
     inputs:
       logLevel:
