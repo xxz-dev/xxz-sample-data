@@ -9,10 +9,29 @@
                     "informationUri": "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/how-codeguru-reviewer-works.html",
                     "rules": [
                         {
-                            "id": "java/insecure-cryptography@v1.0",
-                            "name": "Insecure cryptography",
+                            "id": "my-rule-1",
+                            "name": "rule 1",
                             "shortDescription": {
-                                "text": "Insecure cryptography"
+                                "text": "Insecure cryptography 1"
+                            },
+                            "fullDescription": {
+                                "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
+                            },
+                            "help": {
+                                "text": "Misuse of cryptography-related APIs can create security vulnerabilities. This includes one or more of the following: algorithms with known weaknesses, certain padding modes, lack of integrity checks, and insufficiently large key sizes."
+                            },
+                            "properties": {
+                                "tags": [
+                                    "cryptography"
+                                ],
+                                "problem.severity": "warning"
+                            }
+                        },
+                        {
+                            "id": "my-rule-2",
+                            "name": "rule 2",
+                            "shortDescription": {
+                                "text": "Insecure cryptography 2"
                             },
                             "fullDescription": {
                                 "text": "Weak, broken, or misconfigured cryptography can lead to security vulnerabilities."
@@ -35,7 +54,7 @@
             },
             "results": [
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
+                    "ruleId": "my-rule-1",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -54,7 +73,7 @@
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
+                    "ruleId": "my-rule-2",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -73,7 +92,7 @@
                     }
                 },
                 {
-                    "ruleId": "java/insecure-cryptography@v1.0",
+                    "ruleId": "my-rule-2",
                     "locations": [
                         {
                             "physicalLocation": {
