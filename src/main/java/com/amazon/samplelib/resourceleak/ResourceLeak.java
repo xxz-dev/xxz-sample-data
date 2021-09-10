@@ -15,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.zip.GZIPOutputStream;
 import java.io.BufferedInputStream;
 import java.io.ObjectInputStream;
+import java.io.FileInputStream;
 
 public class ResourceLeak {
 
