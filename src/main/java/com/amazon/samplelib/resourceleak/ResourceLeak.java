@@ -13,7 +13,11 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.zip.GZIPOutputStream;
+import java.io.BufferedInputStream;
+import java.io.ObjectInputStream;
+import java.io.FileInputStream;
 
+// adding a comment to trigger PR new revision
 public class ResourceLeak {
 
     private AmazonS3 amazonS3;
@@ -37,6 +41,17 @@ public class ResourceLeak {
         S3ObjectInputStream objectData = s3Object.getObjectContent();
         String rawJson = IOUtils.toString(objectData);
         return rawJson;
+    }
+    
+    public Object readObjectFromFile(final String objectFile) {
+        try {
+            final ObjectInputStream in = new ObjectInputStream(new BufferedInputStream(new FileInputStream(objectFile)));
+            final Object object = in.readObject();
+            in.close();
+            return object;
+        } catch (final Exception e) {
+            return null;
+        }
     }
 
 }
